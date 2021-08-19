@@ -8,6 +8,6 @@ import (
 
 func main() {
 	router := gin.Default()
-	router.GET("/flows", flow.ListFlowsHandler)
+	router.POST("/flows", flow.ListFlowsHandler)
 	router.Run()
 }
